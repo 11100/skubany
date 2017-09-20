@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Friday Weekend Chat!</title>
+    <script src="jquery.min.js"></script>
+    <script src="sockjs-0.3.4.js"></script>
+    <script src="stomp.js"></script>
+    <script src="chat.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  	<a href="http://fridayweekend.com"> <img
+		src="http://fridayweekend.com/fridayweekend.com.png"
+		alt="friday weekend chat" />
+	</a>
+	<br/>
+    <noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being enabled. Please enable
+        Javascript and reload this page!</h2></noscript>
+
+    <ul id="dashboard">
+
+      <li id="loginPanel">
+        <label for="name">What is your name?</label>
+        <input type="text" id="name" />
+        <button id="connect" onclick="connect();">Connect</button>
+      </li>
+
+      <li id="chatPanel">
+        <label for="content">What to say?</label>
+        <input type="text" id="content" />
+        <button id="sendName" onclick="sendName(this.value);">Send</button>
+        <button id="disconnect" disabled="disabled" onclick="disconnect();">Disconnect</button>
+      </li>
+
+    </ul>
+
+    <ul id="response"></ul>
+
+  </body>
+</html>

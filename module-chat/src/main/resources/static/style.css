@@ -1,0 +1,32 @@
+@font-face{
+    font-family: infprofont;
+    src: url('MerriweatherSans-Regular.ttf');
+}
+
+body{
+	font-family:infprofont;
+}
+
+#chatPanel{
+    display:none;
+    visibility:hidden;
+}
+
+#response li span{
+    font-weight:bold;
+}
+
+input, button{
+	
+	padding:1ex;
+}
+
+ul#dashboard{
+	list-style:none;
+}
+
+input{
+	
+	width:28em;
+	max-width:95%;
+}
